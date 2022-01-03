@@ -4,7 +4,6 @@ public class Stack {
     private int stackSize;
     private int[] array;
     private int top;
-
     public Stack(){}
     public Stack(int size){
         this.stackSize = size;
