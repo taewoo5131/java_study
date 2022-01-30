@@ -14,7 +14,7 @@ public class findKim {
         solution.solution(test);
     }
 
-    static class Solution {
+    private static class Solution {
         public String solution(String[] seoul) {
             String answer = "";
             for(int i = 0; i < seoul.length; i++){

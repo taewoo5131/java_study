@@ -12,7 +12,7 @@ public class PandYLength {
         solution.solution("pPoooYy");
     }
 
-    static class Solution {
+    private static class Solution {
         boolean solution(String s) {
             boolean answer = true;
 

@@ -6,7 +6,7 @@ public class 나머지가1 {
         System.out.println(Solution.solution(10));
     }
 
-    static class Solution {
+    private static class Solution {
         public static int solution(int n) {
             int answer = 1;
             for(int i = 1; i <= n; i++){
