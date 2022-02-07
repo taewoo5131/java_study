@@ -1,4 +1,4 @@
-package com.company.condingtestLV1;
+package com.company.condingtestLV1.java;
 
 public class 나머지가1 {
     public static void main(String[] args) {

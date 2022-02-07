@@ -1,4 +1,4 @@
-package com.company.condingtestLV1;
+package com.company.condingtestLV1.java;
 
 /**
  * 두 수를 입력받아 두 수의 최대공약수와 최소공배수를 반환하는 함수,

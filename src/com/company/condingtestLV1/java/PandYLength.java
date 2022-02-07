@@ -1,4 +1,4 @@
-package com.company.condingtestLV1;
+package com.company.condingtestLV1.java;
 
 /**
  * 대문자와 소문자가 섞여있는 문자열 s가 주어집니다.

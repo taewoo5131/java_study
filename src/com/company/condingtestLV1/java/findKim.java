@@ -1,4 +1,4 @@
-package com.company.condingtestLV1;
+package com.company.condingtestLV1.java;
 
 /**
  * String형 배열 seoul의 element중 "Kim"의 위치 x를 찾아,

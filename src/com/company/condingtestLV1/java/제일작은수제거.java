@@ -1,4 +1,4 @@
-package com.company.condingtestLV1;
+package com.company.condingtestLV1.java;
 
 import java.util.ArrayList;
 import java.util.Arrays;
