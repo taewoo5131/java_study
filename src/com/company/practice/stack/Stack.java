@@ -1,4 +1,4 @@
-package com.company.stack;
+package com.company.practice.stack;
 
 public class Stack {
     private int stackSize;

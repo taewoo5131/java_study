@@ -1,4 +1,4 @@
-package com.company.adapterPattern;
+package com.company.practice.stack.adapterPattern;
 
 public class UseFromJapan {
     public static void main(String[] args) {

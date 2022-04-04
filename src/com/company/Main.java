@@ -1,6 +1,6 @@
 package com.company;
 
-import com.company.stack.Stack;
+import com.company.practice.stack.Stack;
 
 class Test{
     int instanceVar = 10;

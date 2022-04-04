@@ -1,4 +1,4 @@
-package com.company.thread;
+package com.company.practice.stack.thread;
 
 public class Test implements Runnable{
     private int seq = 0;
