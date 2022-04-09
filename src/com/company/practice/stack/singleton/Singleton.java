@@ -1,6 +1,6 @@
 package com.company.practice.stack.singleton;
 
-public class Singleton{
+public class Singleton {
     private static Singleton singleton = new Singleton();
 
     // 생성자 방지
@@ -13,11 +13,6 @@ public class Singleton{
 //            singleton = new Singleton();
 //        }
         return singleton;
-    }
-
-    @Override
-    public void test() {
-        System.out.println(Singleton.getInstance());
     }
 }
 
