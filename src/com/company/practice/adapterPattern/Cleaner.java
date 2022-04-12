@@ -1,4 +1,4 @@
-package com.company.practice.stack.adapterPattern;
+package com.company.practice.adapterPattern;
 
 public class Cleaner implements Electronic220V {
     @Override

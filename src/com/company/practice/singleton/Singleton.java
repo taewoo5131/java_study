@@ -1,4 +1,4 @@
-package com.company.practice.stack.singleton;
+package com.company.practice.singleton;
 
 public class Singleton {
     private static Singleton singleton = new Singleton();
