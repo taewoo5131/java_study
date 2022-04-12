@@ -16,30 +16,44 @@ public class LinkedQueue implements Queue {
         return (this.front == null);
     }
 
+    /**
+     * queue에 삽입
+     * @param item
+     */
     @Override
     public void enqueue(String item) {
-        QueueNode oldQueueNode = rear; // 기존의 rear를 잠시 보관해두고
-        rear = new QueueNode();        // 새로운 rear 생성
-        rear.data = item;              // rear의 data는 파라미터로 받은 String
-        rear.link = null;               // rear의 link는 일단 null
-        // 첫번째 노드일 경우에는 노드의 포인터 링크가 null
+        QueueNode queueNode = new QueueNode();
+        // queue가 비었을때
         if (isEmpty()) {
-            front = rear;
-        } else {
-            oldQueueNode.link = rear;
-//            rear.link = rear;
-//            System.out.println(rear.link);
-        }
-        try {
-            System.out.println("삽입 성공 !!! " + " 삽입 노드 data : " + item + " 삽입 노드 link : " + oldQueueNode.link + " ( " + oldQueueNode.link.data + " ) " + " front : " + front.data + " rear : " + rear.data);
-        } catch (NullPointerException e) {
+            queueNode.data = item;
+            queueNode.link = null;
+            this.front = queueNode;
+            this.rear = queueNode;
             System.out.println("삽입 성공 !!! " + " 삽입 노드 data : " + item + " 삽입 노드 link : " + null + " front : " + front.data + " rear : " + rear.data);
+        // queue가 비어있지 않을 때
+        } else {
+            QueueNode old = this.rear;
+            queueNode.data = item;
+            queueNode.link = null;
+            old.link = queueNode;
+            this.rear = queueNode;
+            System.out.println("삽입 성공 !!! " + " 삽입 노드 data : " + item + " 이전 삽입 노드 link : " + old.link + " ( " + old.link.data + " ) " + " front : " + front.data + " rear : " + rear.data);
         }
     }
 
+    /**
+     * queue에서 꺼내기
+     * @return
+     */
     @Override
     public String dequeue() {
-        return null;
+        if (isEmpty()) {
+            System.out.println("dequeue 실패 !! 큐가 비었습니다.");
+            return null;
+        }
+        String result = front.data;
+        this.front = front.link;
+        return result;
     }
 }
 
@@ -49,5 +63,10 @@ class test{
         queue.enqueue("A");
         queue.enqueue("B");
         queue.enqueue("C");
+        System.out.println(queue.dequeue());;
+        System.out.println(queue.dequeue());;
+        System.out.println(queue.dequeue());;
+        System.out.println(queue.dequeue());;
+
     }
 }
