@@ -143,6 +143,7 @@ select SUBSTR(hiredate,3,2) 년도 , SUBSTR(hiredate,6,2) DY  from emp
 SELECT DATEDIFF(NOW(),DATE('2022-01-01'))
 
 -- 21. 사원들의 상관 사번을 출력하되 상관이 없는 사원에 대해서는 NULL 값 대신 0으로 출력하시오.
+select IFNULL(mgr,0)  from emp
 
 -- 22. DECODE 함수로 직급에 따라 급여를 인상하도록 하시오. 직급이 ‘ANALIST”인 사원은 200, ‘SALESMAN’인 사원은 180, ‘MANAGER’인 사원은 150, ‘CLERK”인 사원은 100을 인상하시오.
 
